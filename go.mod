@@ -6,7 +6,6 @@ require (
 	github.com/LINBIT/godrbdutils v0.0.0-20180425110027-65b98a0f103a
 	github.com/appleboy/easyssh-proxy v1.2.0
 	github.com/astaxie/beego v1.12.0
-	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/ceph/go-ceph v0.0.0-20170728144007-81e4191e131b
 	github.com/coreos/etcd v3.3.18+incompatible
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf // indirect
@@ -28,7 +27,6 @@ require (
 	github.com/spf13/cobra v0.0.5
 	github.com/stretchr/testify v1.4.0
 	github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5 // indirect
-	github.com/ugorji/go v1.1.7 // indirect
 	go.uber.org/zap v1.12.0 // indirect
 	golang.org/x/crypto v0.0.0-20200109152110-61a87790db17
 	golang.org/x/net v0.0.0-20200506145744-7e3656a0809f // indirect
@@ -39,3 +37,5 @@ require (
 	gopkg.in/ini.v1 v1.50.0 // indirect
 	gopkg.in/yaml.v2 v2.2.4
 )
+
+replace google.golang.org/grpc v1.29.1 => google.golang.org/grpc v1.26.0

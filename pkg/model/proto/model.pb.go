@@ -3825,11 +3825,10 @@ var fileDescriptor_4c16552f9fdb66d8 = []byte{
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ context.Context
-var _ grpc.ClientConnInterface
+var _ grpc.ClientConn
 
 // This is a compile-time assertion to ensure that this generated file
 // is compatible with the grpc package it is being compiled against.
-const _ = grpc.SupportPackageIsVersion6
 
 // ProvisionDockClient is the client API for ProvisionDock service.
 //
@@ -3874,10 +3873,10 @@ type ProvisionDockClient interface {
 }
 
 type provisionDockClient struct {
-	cc grpc.ClientConnInterface
+	cc *grpc.ClientConn
 }
 
-func NewProvisionDockClient(cc grpc.ClientConnInterface) ProvisionDockClient {
+func NewProvisionDockClient(cc *grpc.ClientConn) ProvisionDockClient {
 	return &provisionDockClient{cc}
 }
 
@@ -4570,10 +4569,10 @@ type FileShareDockClient interface {
 }
 
 type fileShareDockClient struct {
-	cc grpc.ClientConnInterface
+	cc *grpc.ClientConn
 }
 
-func NewFileShareDockClient(cc grpc.ClientConnInterface) FileShareDockClient {
+func NewFileShareDockClient(cc *grpc.ClientConn) FileShareDockClient {
 	return &fileShareDockClient{cc}
 }
 
@@ -4826,10 +4825,10 @@ type AttachDockClient interface {
 }
 
 type attachDockClient struct {
-	cc grpc.ClientConnInterface
+	cc *grpc.ClientConn
 }
 
-func NewAttachDockClient(cc grpc.ClientConnInterface) AttachDockClient {
+func NewAttachDockClient(cc *grpc.ClientConn) AttachDockClient {
 	return &attachDockClient{cc}
 }
 
